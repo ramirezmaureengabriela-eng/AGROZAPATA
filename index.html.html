@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página en progreso</title>
+
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#dab30626;
+      color:hwb(0 13% 60%);
+    }
+
+    header{
+      background:linear-gradient(135deg,#eb4903,#eeba2a);
+      color:rgb(255, 255, 255);
+      padding:40px 20px;
+      text-align:center;
+    }
+
+    nav{
+      background:rgb(226, 225, 217);
+      padding:15px;
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      box-shadow:0 2px 6px rgba(0,0,0,.1);
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#0e0c18;
+      font-weight:bold;
+    }
+
+    section{
+      padding:50px 20px;
+      max-width:1000px;
+      margin:auto;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:30px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,.1);
+      text-align:center;
+    }
+
+    footer{
+      background:#dc4c09;
+      color:rgb(255, 255, 255);
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+      font-size:.9rem;
+    }
+    
+    .boton{
+  display:inline-block;
+  background:#68ca8a;
+  color:white;
+  padding:12px 25px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+
+  
+}
+section{
+  text-align:center;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>AGROZAPATA</h1>
+    <p>Calidad Italcol, confianza AgroZapata </p>
+  </header>
+
+  <nav>
+    <a href="#">QUIENES SOMOS</a>
+    <a href="#">MISIÓN - VISIÓN </a>
+    <a href="#">VALORES CORPORATIVOS</a>
+    <a href="#">PORTAFOLIO</a>
+    <a href="#">NUESTRAS REDES SOCIALES</a>
+  </nav>
+
+  <section>
+    <h2>Bienvenidos</h2>
+    <img src="imagen1.jpg/Logo AZ.jpeg" width="300">
+    <br><br>
+<a href="https://wa.me/573014446219?text=Hola,%20somos%20Agrozapata%20en%20que%20te%20podemos%20colaborar" class="boton">
+  <img src="WhatsApp_icon.png" width="20" style="vertical-align: middle;">
+  Contáctame por WhatsApp
+</a>
+
+    <p>Esta página muestra la estructura y el diseño base del proyecto.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Localización</h3>
+        <a href="https://maps.app.goo.gl/VPt1Vc93FR8khkFUA" target="_blank">
+  Ver ubicación
+</a>
+      </div>
+
+      
+    </div>
+  </section>
+  <!-- QUIÉNES SOMOS -->
+<section id="quienes-somos">
+  <h2>¿Quiénes somos?</h2>
+  <p>
+    Agrozapata es una empresa dedicada a la distribución de productos
+    agropecuarios de alta calidad para la nutrición, salud y bienestar animal, incluyendo concentrados, suplementos 
+            y medicamentos,con un servicio cercano, confiable y especializado que responda 
+            a las necesidades de nuestros clientes del sector agropecuario y doméstico.
+
+  </p>
+  <!-- MISIÓN Y VISIÓN -->
+<section id="mision-vision">
+  <h2>Misión</h2>
+  <p>
+    Brindar productos de alta calidad para la nutrición, salud y bienestar animal, incluyendo concentrados, 
+    suplementos y medicamentos, con un servicio cercano, confiable 
+    y especializado que responda a las necesidades de nuestros clientes del sector agropecuario y doméstico.
+  </p>
+
+  <h2>Visión</h2>
+  <p>
+    Ser una empresa líder en el mercado regional de productos para animales para junio del 2026, 
+    reconocida por su compromiso con el cuidado animal, la excelencia en el servicio y la innovación constante, 
+    contribuyendo al desarrollo sostenible del campo colombiano.
+  </p>
+  <!-- VALORES -->
+<section id="valores">
+  <h2>Valores corporativos</h2>
+
+<div class="valores">
+<p>Respeto</p>
+<p>Innovación</p>
+<p>Calidad</p>
+<p>Crecimiento</p>
+<p>Honestidad</p>
+<p>Trabajo en equipo</p>
+</div>
+
+  <!-- PORTAFOLIO -->
+<section id="portafolio">
+<h2>Portafolio</h2>
+<div class="menu-productos">
+<a href="javascript:void(0)" onclick="mostrarA()">A. Concentrados</a>
+<a href="javascript:void(0)" onclick="mostrarB()">B. Concentrados a granel</a>
+<a href="javascript:void(0)" onclick="mostrarC()">C. Concentrado pequeños</a>
+</div>
+
+
+ <div id="infoA" style="display:none; text-align:center;">
+  <p>Alimento balanceado para mejorar la nutrición y crecimiento de los animales.</p>
+
+  <h3>Engorde para aves</h3>
+  <img src="concentrado pollito_in.png" width="300">
+  <p><b>Cantidad:</b> 40 kg</p>
+  <p><b>Precio:</b> $85.000</p>
+
+  <h3>Concentrado para equinos</h3>
+  <img src="horse.png" width="300">
+  <p><b>Cantidad:</b> 40 kg</p>
+  <p><b>Precio:</b> $85.000</p>
+
+  <h3>Concentrado para porcinos</h3>
+  <img src="cerdo.webp" width="300">
+  <p><b>Cantidad:</b> 40 kg</p>
+  <p><b>Precio:</b> $85.000</p>
+
+</div>
+
+<div id="infoB" style="display:none; text-align:center;">
+
+<p>Concentrados empacados al vacío para conservar frescura y calidad.</p>
+
+<h3>Concentrado a granel</h3>
+<img src="prod B.jpg" width="300">
+
+<p><b>Cantidad:</b> 30 kg</p>
+<p><b>Precio:</b> $70.000</p>
+
+<h3>Concentrado a granel perros</h3>
+<img src="agranel perro.webp" width="300">
+
+<p><b>Cantidad:</b> 30 kg</p>
+<p><b>Precio:</b> $70.000</p>
+
+</div>
+
+
+<div id="infoC" style="display:none; text-align:center;">
+
+<div class="productos">
+
+<div class="card-producto">
+<img src="prodC.jpg">
+<h4>Concentrado perros pequeños</h4>
+<p><b>Cantidad:</b> 20 kg</p>
+<p><b>Precio:</b> $55.000</p>
+</div>
+
+<div class="card-producto">
+<img src="gatos_pequeños.jpg">
+<h4>Concentrado gatos pequeños</h4>
+<p><b>Cantidad:</b> 20 kg</p>
+<p><b>Precio:</b> $55.000</p>
+</div>
+
+</div>
+
+<h3>Concentrado razas pequeñas gatos</h3>
+<img src="prod C.jpg" width="300">
+
+<p><b>Cantidad:</b> 20 kg</p>
+<p><b>Precio:</b> $55.000</p>
+
+</div>
+
+</div>
+
+<h3>Concentrado razas pequeñas gatos</h3>
+<img src="gatos_pequeño-removebg-preview.png" width="300">
+
+<p><b>Cantidad:</b> 20 kg</p>
+<p><b>Precio:</b> $55.000</p>
+
+</div>
+</section>
+
+    </div>
+  </div>
+  <!-- CONTACTO -->
+<section id="contacto">
+  <h2>Contacto y redes sociales</h2>
+  <p>Comunícate con nosotros a través de nuestras redes:</p>
+
+
+  <!-- AQUÍ VAN LOS BOTONES -->
+</section>
+<a href="https://wa.me/573014446219?text=Hola,%20somos%20Agrozapata%20en%20que%20te%20podemos%20colaborar" class="boton">
+  <img src="WhatsApp_icon.png" width="20" style="vertical-align: middle;">
+  Contáctame por WhatsApp 
+</a>
+</section>
+<a href="https://www.facebook.com/share/1CJ1hUeTeC/?mibextid=wwXIfr" class="boton">
+  <img src="siii logo faceb.png" width="20" style="vertical-align: middle;">
+  Contáctame por Facebook
+</a>
+</section>
+<a href="https://www.instagram.com/agrozapata_9?igsh=MWl0YjJpcHl3ZzZxdQ%3D%3D&utm_source=qr" class="boton">
+  <img src="instagram.jpg" width="20" style="vertical-align: middle;">
+  Contáctame por Instagram
+</a>
+</section>
+
+</section>
+
+
+  <footer>
+    <p>© 2026 –  by AZ - Italcol </p>
+  </footer>
+<script>
+
+function mostrarA(){
+document.getElementById("infoA").style.display="block";
+document.getElementById("infoB").style.display="none";
+document.getElementById("infoC").style.display="none";
+}
+
+function mostrarB(){
+document.getElementById("infoA").style.display="none";
+document.getElementById("infoB").style.display="block";
+document.getElementById("infoC").style.display="none";
+}
+
+function mostrarC(){
+document.getElementById("infoA").style.display="none";
+document.getElementById("infoB").style.display="none";
+document.getElementById("infoC").style.display="block";
+}
+
+</script>
+</body>
+</html>

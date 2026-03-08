@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Concentrados</title>
+</head>
+
+<body>
+
+<h1>Concentrado para animales</h1>
+
+<img src="imagen1.jpg" width="300">
+
+<p>Producto alimenticio balanceado para animales que mejora su crecimiento y nutrición.</p>
+
+<p><b>Cantidad:</b> 40 kg</p>
+
+<p><b>Precio:</b> $85.000</p>
+
+<a href="index.html">Volver al inicio</a>
+
+</body>
+</html>
