@@ -139,4 +139,36 @@ h2{
 p{
   margin-bottom:20px;
 }
+
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+}
+
+.card{
+  width:350px;
+  height:150px;
+  background:#eee;
+  border-radius:15px;
+  text-align:center;
+  padding:30px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+.cards{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:40px;
+}
+
+.card{
+width:400px;
+height:150px;
+background:#eeeeee;
+border-radius:20px;
+text-align:center;
+padding:30px;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
 }
