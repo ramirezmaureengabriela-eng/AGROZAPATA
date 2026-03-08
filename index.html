@@ -108,6 +108,34 @@ top:10px;
 right:20px;
 width:120px;
 }
+#pedido{
+text-align:center;
+margin-top:50px;
+}
+
+.form-pedido{
+display:grid;
+grid-template-columns: 1fr 1fr;
+gap:20px;
+max-width:600px;
+margin:auto;
+}
+
+.form-pedido input,
+.form-pedido textarea{
+width:100%;
+padding:10px;
+}
+
+.form-pedido button{
+grid-column: span 2;
+background:#ff7a00;
+color:white;
+border:none;
+padding:12px;
+border-radius:6px;
+cursor:pointer;
+}
   </style>
 </head>
 <a href="#inicio" class="volver-arriba">↑</a>
@@ -125,7 +153,9 @@ width:120px;
 <a href="#mision-vision">MISIÓN - VISIÓN</a>
 <a href="#valores">VALORES CORPORATIVOS</a>
 <a href="#portafolio">PORTAFOLIO</a>
+<a href="#pedido">HACER PEDIDO</a>
 <a href="#redes">NUESTRAS REDES SOCIALES</a>
+
 </nav>
 
   <section>
@@ -286,6 +316,31 @@ width:120px;
 </div>
 </section>
 
+<section id="pedido">
+<h2>Realizar pedido</h2>
+
+<form class="form-pedido" onsubmit="enviarPedido(event)">
+
+<label>Nombre</label>
+<input type="text" id="nombre" required>
+
+<label>Teléfono</label>
+<input type="tel" id="telefono" required>
+
+<label>Producto</label>
+<input type="text" id="producto">
+
+<label>Cantidad</label>
+<input type="number" id="cantidad">
+
+<label>Dirección</label>
+<textarea id="direccion"></textarea>
+
+<button type="submit">Enviar pedido</button>
+
+</form>
+</section>
+
     </div>
   </div>
   <!-- CONTACTO -->
@@ -338,7 +393,28 @@ document.getElementById("infoA").style.display="none";
 document.getElementById("infoB").style.display="none";
 document.getElementById("infoC").style.display="block";
 }
+</script>
+<script>
+function enviarPedido(event){
+event.preventDefault();
 
+let nombre = document.getElementById("nombre").value;
+let telefono = document.getElementById("telefono").value;
+let producto = document.getElementById("producto").value;
+let cantidad = document.getElementById("cantidad").value;
+let direccion = document.getElementById("direccion").value;
+
+let mensaje = "Hola Agrozapata, quiero hacer un pedido:%0A%0A" +
+"Nombre: " + nombre + "%0A" +
+"Teléfono: " + telefono + "%0A" +
+"Producto: " + producto + "%0A" +
+"Cantidad: " + cantidad + "%0A" +
+"Dirección: " + direccion;
+
+let url = "https://wa.me/573014446219?text=" + mensaje;
+
+window.open(url, "_blank");
+}
 </script>
 </body>
 </html>
